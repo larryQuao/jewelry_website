@@ -832,5 +832,26 @@ footer{
     .category-container{
         grid-template-columns: 1fr;
     }
-    .blog-box
+    .blog-box{
+        margin: 20px auto;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+@media(max-width: 360px){
+    .footer-container{
+        grid-template-columns: 1fr;
+    }
+    .navigation{
+        width: 100%;
+        padding: 35px 15px; 
+    }
+    .nav-search,
+    .nav-cart{
+        display: none !important;
+    }
+    .right-nav{
+        gap: 0px;
+    }
+
 }
