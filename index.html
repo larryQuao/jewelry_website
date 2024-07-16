@@ -34,6 +34,11 @@
         <a href="#" class="logo">
           <img src="/images/Megan's Jewelry.png" alt="Logo" />
         </a>
+        <!-- menu button-->
+         <input type="checkbox" class="menu-btn" id="menu-btn">
+         <label for="menu-btn" class="menu-icon">
+            <span class="nav-icon"></span>
+         </label>
         <ul class="menu">
           <li><a href="#" class="activr">Home</a></li>
           <li><a href="#">Category</a></li>
@@ -592,7 +597,117 @@
             <span>These are latest Blogs</span>
          </div>
 
+         <!-- blog-container -->
+         <div class="blog-container">
+            
+            <!-- box 1 -->
+            <div class="blog-box">
+                <div class="blog-img">
+                    <img src="images/blog-img1.webp" alt="blog"/>
+                </div>
+                <!-- text -->
+                 <div class="blog-text">
+                    <span>19 May 2024 / Jewelry</span>
+                    <a href="#" class="blog-title">Best Family Jelwery Collection</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, nulla tenetur eaque optio voluptas ut nemo animi obcaecati.</p>
+                    <a href="#" >Read More</a>
+                 </div>
+            </div>
+
+            <!-- box 2 -->
+            <div class="blog-box">
+                <div class="blog-img">
+                    <img src="images/blog-img2.webp" alt="blog"/>
+                </div>
+                <!-- text -->
+                 <div class="blog-text">
+                    <span>19 May 2024 / Jewelry</span>
+                    <a href="#" class="blog-title">Best Family Jelwery Collection</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, nulla tenetur eaque optio voluptas ut nemo animi obcaecati.</p>
+                    <a href="#" >Read More</a>
+                 </div>
+            </div>
+
+            <!-- box 1 -->
+            <div class="blog-box">
+                <div class="blog-img">
+                    <img src="images/blog-img3.webp" alt="blog"/>
+                </div>
+                <!-- text -->
+                 <div class="blog-text">
+                    <span>19 May 2024 / Jewelry</span>
+                    <a href="#" class="blog-title">Best Family Jelwery Collection</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, nulla tenetur eaque optio voluptas ut nemo animi obcaecati.</p>
+                    <a href="#" >Read More</a>
+                 </div>
+            </div>
+         </div>
      </section>
+
+     <!-- Footer -->
+      <footer>
+        <!-- company-box -->
+        <div class="footer-container">
+            <!-- company-box -->
+            <div class="footer-company-box">
+                <!-- logo -->
+                <a href="#" class="logo">
+                    <img src="/images/Megan's Jewelry.png" alt="Logo">
+                </a>
+                <!-- details -->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nesciunt recusandae? Corporis illo reprehenderit, veniam dolorum eaque laborum.</p>
+                <!-- social -->
+                <div class="footer-social">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+
+            </div>
+            
+            <!-- Link-box -->
+            <div class="footer-link-box">
+                <strong>Main Links</strong>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Feature</a></li>
+                    <li><a href="#">Blogs</a></li>
+                </ul>
+            </div>
+            <!-- Link-box -->
+            <div class="footer-link-box">
+                <strong>External Links</strong>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Feature</a></li>
+                    <li><a href="#">Blogs</a></li>
+                </ul>
+            </div>
+            <!-- Link-box -->
+            <div class="footer-link-box">
+            <strong>Internal Links</strong>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Feature</a></li>
+                <li><a href="#">Blogs</a></li>
+            </ul>
+            </div>
+        </div>
+        <!-- bottom -->
+        <div class="footer-bottom">
+            <span class="footer-owner">Made By Going-To Internet</span>
+            <span class="copyright">&#169; Copyright 2024 - Going-To Internet</span>
+         </div>
+
+        
+      </footer>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -612,11 +727,15 @@
             slidesPerView: 2,
             spaceBetween: 20,
           },
-          768: {
+          740: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          1000: {
             slidesPerView: 4,
             spaceBetween: 20,
           },
-          1024: {
+          1224: {
             slidesPerView: 5,
             spaceBetween: 20,
           },
@@ -636,16 +755,23 @@
             slidesPerView: 2,
             spaceBetween: 20,
           },
-          768: {
-            slidesPerView: 4,
-            spaceBetween: 20,
-          },
           1024: {
             slidesPerView: 3,
             spaceBetween: 20,
           },
         },
       });
+
+    //   fix the header
+    window.addEventListener('scroll', function(){
+        var header = document.getElementById('header');
+        if(window.scrollY > 0) {
+            header.classList.add('header-fix');
+        }
+        else{
+            header.classList.remove('header-fix');
+        }
+    })
     </script>
   </body>
 </html>
