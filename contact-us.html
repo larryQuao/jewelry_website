@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Megan's Jelwery</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="/images/Megan's Jewelr_favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Recursive:wght@300..1000&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ecc73d8886.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <div class="header-top-bar">
+        <span>Welcome to Megan's Jewelry Collection</span>
+      </div>
+      <nav class="navigation">
+        <a href="#" class="logo">
+          <img src="/images/Megan's Jewelry.png" alt="Logo" />
+        </a>
+        <!-- menu button-->
+         <input type="checkbox" class="menu-btn" id="menu-btn">
+         <label for="menu-btn" class="menu-icon">
+            <span class="nav-icon"></span>
+         </label>
+        <ul class="menu">
+          <li><a href="/index.html" class="activr">Home</a></li>
+          <li><a href="/about_us.html">About Us</a></li>
+          <li><a href="#">Locate Us</a></li>
+          <li><a href="#">Owner</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+        <div class="right-nav">
+          <a href="#" class="nav-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+          <a href="#" class="nav-user">
+            <i class="fa-solid fa-user"></i>
+          </a>
+          <a href="#" class="nav-cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>0</span>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <form class="contact-container">
+      <h1>Contact Us</h1>
+      <div class="input-name">
+          <input type="text" class="first-name" name="fName" placeholder="First Name">
+          <input type="text" class="last-name" name="lName" placeholder="Last Name">
+      </div>
+      <div class="input-email">
+          <input type="email" class="email" name="email" placeholder="Email">
+      </div>
+      <div class="input-subject">
+          <input type="text" class="subject" name="subject" placeholder="Subject">
+      </div>
+      <div class="input-message">
+          <input type="text" class="message" name="message" placeholder="Message">
+      </div>
+      <div class="action-btn">
+          <button class="btn btn-submit">Submit</button>
+      </div>
+  </form>
+  </body>
+</html>
