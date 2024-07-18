@@ -178,7 +178,7 @@ header{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: poppins;
+    font-family: 'Poppins', sans-serif;
 }
 #about-section {
     width: 100%;
@@ -249,83 +249,67 @@ header{
 }
 
 /* Contact us page */
-:root {
-    --color-background: #141414;
-    --color-text-white: #FFFFFF;
-    --color-placeholder: #C4C4C4;
-    --color-light-black: #29384D;
-    --color-background-input-field: #242424;
-    --color-border-1: #383838;
-    --color-actions: #38E078;
-    --color-border: #E5E8EB;
-}
-
 body {
-    margin: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  * {
     box-sizing: border-box;
-    /* background-color: var(--color-background); */
-}
-
-.btn {
-    height: 40px;
+  }
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    border-radius: 8px;
+  }
+  
+  input[type=submit] {
+    background-color: var(--main-color);
+    color: white;
+    padding: 12px 20px;
     border: none;
-    padding: 10px 16px;
-    border-radius: 12px;
-    letter-spacing: 0.5px;
     cursor: pointer;
-}
-
-.btn-sign-in {
-    background-color: var(--color-actions);
-}
-
-.btn-sign-up {
-    background-color: var(--color-light-black);
-    color: var(--color-text-white);
-}
-
-.contact-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
-    margin-top: 36px;
-}
-
-input {
-    height: 56px;
-    border-radius: 12px;
-    border: 1px solid var(--color-border-1);
-    outline: none;
-    width: 456px;
-    padding: 0 8px 0 16px;
-    background-color: var(--color-background-input-field);
-    color: var(--color-text-white);
-}
-
-.input-name {
-    display: flex;
-    gap: 24px;
-}
-
-.input-name input {
-    width: 204px;
-}
-
-.btn-submit {
-    background-color: var(--color-actions);
-    width: 480px;
-}
-
-.social-contact {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-
-::placeholder, .handle, .or-text {
-    color: var(--color-placeholder);
-}
+    border-radius: 8px;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #cab300;
+    border-radius: 8px;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
 #new_product{
     max-width: 1200px;
     width: 90%;

@@ -60,24 +60,33 @@
         </div>
       </nav>
     </header>
-    <form class="contact-container">
-      <h1>Contact Us</h1>
-      <div class="input-name">
-          <input type="text" class="first-name" name="fName" placeholder="First Name">
-          <input type="text" class="last-name" name="lName" placeholder="Last Name">
-      </div>
-      <div class="input-email">
-          <input type="email" class="email" name="email" placeholder="Email">
-      </div>
-      <div class="input-subject">
-          <input type="text" class="subject" name="subject" placeholder="Subject">
-      </div>
-      <div class="input-message">
-          <input type="text" class="message" name="message" placeholder="Message">
-      </div>
-      <div class="action-btn">
-          <button class="btn btn-submit">Submit</button>
-      </div>
-  </form>
+<div class="container">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+    <p>To hear from, take time to fill the form and we will get back to you.</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="/images/woman-with-jewels.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
   </body>
 </html>
