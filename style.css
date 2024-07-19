@@ -280,7 +280,40 @@ body {
     background-color: #cab300;
     border-radius: 8px;
   }
-  
+  /* Style for the Locate Us page */
+  .heading{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    width: 70%;
+    margin: auto;
+    border: 1px solid #9b9b9b;
+    padding: 32px;
+    border-radius: 8px;
+  }
+  .heading h1{
+    font-weight: 300;
+    text-align: center;
+  }
+  .heading p{
+    font-size: 1rem;
+    text-align: center;
+  }
+  .heading img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  iframe{
+    display: flex;
+
+    justify-content: center;
+  }
+
   /* Style the container/contact section */
   .container {
     border-radius: 5px;
